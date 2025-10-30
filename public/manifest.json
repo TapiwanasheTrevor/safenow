@@ -1,0 +1,90 @@
+{
+  "name": "SafeNow Emergency Response",
+  "short_name": "SafeNow",
+  "description": "Offline emergency response and first aid guide with voice commands, GPS alerts, and step-by-step instructions",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "orientation": "portrait",
+  "categories": ["health", "medical", "emergency", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Trigger Emergency Alert",
+      "short_name": "Alert",
+      "description": "Send emergency alert to all contacts",
+      "url": "/?action=alert",
+      "icons": [{ "src": "/icons/shortcut-alert.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "First Aid Guides",
+      "short_name": "First Aid",
+      "description": "Access first aid instructions",
+      "url": "/first-aid",
+      "icons": [{ "src": "/icons/shortcut-firstaid.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Emergency Contacts",
+      "short_name": "Contacts",
+      "description": "View and manage emergency contacts",
+      "url": "/contacts",
+      "icons": [{ "src": "/icons/shortcut-contacts.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "iarc_rating_id": ""
+}
