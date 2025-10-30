@@ -9,12 +9,15 @@ export interface PWAInstallPrompt {
 class PWAUtils {
   private deferredPrompt: PWAInstallPrompt | null = null;
   private swRegistration: ServiceWorkerRegistration | null = null;
-  private isOnline: boolean = navigator.onLine;
+  private isOnline: boolean = typeof navigator !== 'undefined' ? navigator.onLine : true;
   private onlineCallbacks: Set<(online: boolean) => void> = new Set();
 
   constructor() {
-    this.setupOnlineDetection();
-    this.setupInstallPrompt();
+    // Only run in browser environment
+    if (typeof window !== 'undefined') {
+      this.setupOnlineDetection();
+      this.setupInstallPrompt();
+    }
   }
 
   // Register service worker
